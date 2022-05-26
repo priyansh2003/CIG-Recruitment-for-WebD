@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: beige;
+}
+
+.main {
+    background-color: aqua;
+
+}
+
+.header {
+    text-align: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 40px;
+}
+
+.items {
+    align-items: center;
+    height: 1300px;
+    width: 1700px;
+    background-color: teal;
+    display: grid;
+    list-style: none;
+    margin: auto;
+    border-radius: 100px;
+}
+
+.item {
+    display: grid;
+    background-color: black;
+    display: grid;
+    height: 350px;
+    width: 350px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+    margin-left: 70px;
+    word-wrap: break-word;
+    border: 5px solid rgb(92, 92, 187);
+    overflow: hidden;
+    display: flex;
+    margin:auto;
+    color: aliceblue;
+    border-radius:  95px;
+    font-size: 25px;
+}
+
+#item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#item2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+#item3 {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width:500px;
+    height:500px;
+    border-radius: 202px;
+}
+
+#item4 {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#item5 {
+    grid-row-start: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+#item6{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    height: 179px;
+    width: 374px;
+}
+
+#item7{
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    height: 400px;
+    width: 400px;
+}
+
+
+.img{
+      width: 500px;
+      height: 500px;
+}
+
+:hover{
+    color:burlywood;
+    transition: 1s;
+}
+
+.social{
+    height: 190px;
+    width: 190px;
+    border-radius: 100px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 105px;
+    width: 267px;
+    height: 288px;
+}
+
+#name{
+         
+}
+
+#email{
+
+}
+
+#msg{
+
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">WELCOME TO MY PORTFOLIO</div>
+        <nav class = "items">
+            <li class = "item" id ="item1">I am Priyansh Gupta . born in Uttarakhand and brought up in Ghaziabad. I identify myself as a passionate and a enthusiastic learner always ready to explore new technologies</li>
+            <li class = "item" id ="item2"> Till 12th - CBSE Board from Seth Anandram Jaipuria School, currently pursuing bachelors in production engineering from IIT Roorkee</li>
+            <li class = "item" id ="item3"><img src="profile.jpeg" class = "img"></li>
+            <li class = "item" id  ="item4">I have basic development skills using HTML and CSS , basic machine learning skills and great leadership qualities</li>
+            <li class = "item" id ="item5">I believe that with patience and consistency anyone can achieve anything in this world , bigger goals require a massive amount of patience</li>
+            <li class = "item" id ="item6"><a href="https://www.quora.com/profile/Priyansh-Gupta-210?ch=3&oid=1398596103&share=026a7788&srid=uWfBUe&target_type=user" target="_blank"><img src="quora.png" class ="social"></a>
+                                           <a href="https://www.linkedin.com/in/priyansh-gupta-96b666229" target ="_blank"><img src="linkedin.png" class="social"></a></li>
+            <li class = "item" id ="item7">
+                <form onsubmit="sendEmail() ; reset() ; return false">
+                    <h4>Contact me</h4>
+                    <input type="text" placeholder="Your Name" required class ="name">
+                    <input type="text" placeholder="Email Id" required id ="email">
+                    <textarea cols="30" rows="10" id ="msg"></textarea>
+                    <button>SUBMIT</button>
+                </form>
+            </li>                               
+        </nav>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail()
+        {
+            Email.send({
+    Host : "smtp.gmail.com",
+    Username : "heyaneya2@gmail.com",
+    Password : "heya12neya@@",
+    To : 'hellomellohmhm@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Form Enquiry",
+    Body : "Name: " + document.getElementById('name').value + "<br> Email: " + document.getElementById('email').value + "<br> Message: " + document.getElementById('msg').value
+}).then(
+  message => alert(MESSAGE SENT!!!)
+);
+        }
+    </script>
+</body>
+</html>
